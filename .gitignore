@@ -1,0 +1,8 @@
+# Ignore environment files
+.env
+
+# Ignore other sensitive or temporary files
+*.log
+*.bak
+__pycache__/
+.DS_Store
