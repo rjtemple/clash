@@ -17,6 +17,11 @@
             color: #444;
             font-size: 36px;
         }
+        h2 {
+            color: #666;
+            font-size: 28px;
+            margin-top: 40px;
+        }
         p {
             font-size: 18px;
             line-height: 1.6;
@@ -37,25 +42,45 @@
         a:hover {
             text-decoration: underline;
         }
+        hr {
+            border: none;
+            border-top: 2px solid #ddd;
+            margin: 30px 0;
+        }
     </style>
 </head>
 <body>
     <h1>Clash Royale Deck Matchup Visualizations</h1>
     <p>
-        This project visualizes **Clash Royale** deck matchups using **PCA** and **t-SNE** projections. Each cluster represents a unique set of deck matchups, allowing you to explore the relationships between different strategies. Use the links below to view the interactive charts, where each data point corresponds to a specific matchup.
+        This project visualizes **Clash Royale** deck matchups using **PCA** and **t-SNE** projections. It includes two main types of visualizations:
     </p>
 
+    <h2>Individual Matchup Distributions</h2>
+    <p>These charts show the distribution of individual deck matchups, highlighting how different cards and strategies perform against each other.</p>
     <ul>
         <li><a href="Winner.html">Winner's First Alphabetical Win Condition</a></li>
         <li><a href="Loser.html">Loser's First Alphabetical Win Condition</a></li>
         <li><a href="Elixir.html">Average Elixir Cost Difference</a></li>
         <li><a href="WinCon.html">Tuple of Winner and Loser First Alphabetical Win Condition</a></li>
-        <li><a href="Winner100.html">Winner's 100 Closest Cards</a></li>
-        <li><a href="Loser100.html">Loser's 100 Closest Cards</a></li>
-        <li><a href="Winner500.html">Winner's 500 Closest Cards</a></li>
-        <li><a href="Loser500.html">Loser's 500 Closest Cards</a></li>
-        <li><a href="Winner1000.html">Winner's 1000 Closest Cards</a></li>
-        <li><a href="Loser1000.html">Loser's 1000 Closest Cards</a></li>
+        <li><a href="Winner100.html">Winner's Shared Cards, K = 100</a></li>
+        <li><a href="Loser100.html">Loser's Shared Cards, K = 100</a></li>
+        <li><a href="Winner500.html">Winner's Shared Cards, K = 500</a></li>
+        <li><a href="Loser500.html">Loser's Shared Cards, K = 500</a></li>
+        <li><a href="Winner1000.html">Shared Cards, K = 1000</a></li>
+        <li><a href="Loser1000.html">Loser's Shared Cards, K = 1000</a></li>
+    </ul>
+
+    <hr>
+
+    <h2>Deck Distributions</h2>
+    <p>These charts show the distribution of entire decks, grouped by various features like win conditions, elixir cost, and shared card similarity.</p>
+    <ul>
+        <li><a href="DeckWinner.html">Deck Distribution By Winner</a></li>
+        <li><a href="DeckTower.html">Deck Distribution By Tower Card</a></li>
+        <li><a href="DeckElixir.html">Deck Distribution By Elixir Cost</a></li>
+        <li><a href="DeckWinCon.html">Deck Distribution By Win Condition</a></li>
+        <li><a href="DeckShared1.html">Deck Distribution By 1 Shared Card, KNN=10</a></li>
+        <li><a href="DeckShared2.html">Deck Distribution By 2 Shared Cards, KNN=10</a></li>
     </ul>
 
     <p>
